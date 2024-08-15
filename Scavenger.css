@@ -1,0 +1,150 @@
+/* General styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('https://example.com/your-background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100%;
+    color: #fff;
+}
+
+/* Container styles */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
+}
+
+.fade-out {
+    opacity: 0;
+}
+
+/* Start Screen */
+.startScreen {
+    max-width: 600px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.startScreen h1 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.startScreen button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.startScreen button:hover {
+    background-color: #45a049;
+}
+
+/* Clue and Answer Sections */
+.clue, .answer {
+    max-width: 600px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.clue {
+    font-size: 1.2em;
+}
+
+.answer input[type="text"] {
+    width: calc(100% - 30px);
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.answer button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.answer button:hover {
+    background-color: #45a049;
+}
+
+/* End Screen */
+.endScreen {
+    max-width: 600px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.endScreen h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.endScreen button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.endScreen button:hover {
+    background-color: #45a049;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .startScreen h1, .endScreen h1 {
+        font-size: 1.2em;
+    }
+
+    .clue, .answer {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .startScreen h1, .endScreen h1 {
+        font-size: 1em;
+    }
+
+    .clue, .answer {
+        font-size: 0.9em;
+    }
+
+    .answer input[type="text"] {
+        width: calc(100% - 20px);
+    }
+}
